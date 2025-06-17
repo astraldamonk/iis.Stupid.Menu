@@ -1900,7 +1900,7 @@ namespace iiMenu.Menu
                     stumpTextObj = new GameObject("IIMenustumpTextParent");
                     TextMeshPro stumpText = stumpTextObj.AddComponent<TextMeshPro>();
                     stumpText.text = $"Thank You For Using <color=orange>ii's Stupid Menu</color>\nVersion: <color=grey>{PluginInfo.Version}</color>";
-                    stumpText.fontSize = 2f;
+                    stumpText.fontSize = 1.5f;
                     stumpText.alignment = TextAlignmentOptions.Center;
                     stumpText.color = Color.white;
                     TextMeshPro referenceMOTDFont = GameObject.Find("motdtext")?.GetComponent<TextMeshPro>();
@@ -5099,7 +5099,6 @@ jgs \_   _/ |Oo\
         public static Material StumpMat = null;
         public static GameObject motd;
         public static GameObject motdText;
-        public static GameObject stumpTextObj;
         public static Material glass;
 
         public static Material cannmat;
