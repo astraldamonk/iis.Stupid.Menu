@@ -1894,6 +1894,7 @@ namespace iiMenu.Menu
             canvasScaler.dynamicPixelsPerUnit = highQualityText ? 2500f : 1000f;
 
             if (stumpTextToggle)
+            {
                 GameObject stumpTextObj = new GameObject("IIMenustumpTextParent");
                 TextMeshPro stumpText = stumpTextObj.AddComponent<TextMeshPro>();
                 stumpText.text = $"Thank You For Using <color=orange>ii's Stupid Menu</color>\nVersion: <color=grey>{PluginInfo.Version}</color>";
@@ -1912,6 +1913,7 @@ namespace iiMenu.Menu
                 stumpTransform.Rotate(0f, 180f, 0f);
                 stumpText.renderer.material.shader = Shader.Find("GUI/Text Shader");
                 UnityEngine.Object.Destroy(stumpTextObj, Time.deltaTime);
+            }
 
             if (scaleWithPlayer)
                 canvas.transform.localScale *= GorillaLocomotion.GTPlayer.Instance.scale;
