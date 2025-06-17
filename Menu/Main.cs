@@ -1893,6 +1893,7 @@ namespace iiMenu.Menu
             canvas.renderMode = RenderMode.WorldSpace;
             canvasScaler.dynamicPixelsPerUnit = highQualityText ? 2500f : 1000f;
 
+            // credits astral/lmapy also thx tagmonke for the stump center value bc I was too lazy
             if (stumpTextToggle)
             {
                 if (stumpTextToggle && stumpTextObj == null)
@@ -1910,7 +1911,7 @@ namespace iiMenu.Menu
                     }
                     Transform stumpTransform = stumpTextObj.transform;
                     stumpTransform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                    stumpTransform.position = new Vector3(-63.5511f, 12.2094f, -82.6264f);
+                    stumpTransform.position = new Vector3(-66.4848f, 11.8871f, -82.6619f);
                     stumpTransform.LookAt(Camera.main.transform.position);
                     stumpTransform.Rotate(0f, 180f, 0f);
                     stumpText.renderer.material.shader = Shader.Find("GUI/Text Shader");
