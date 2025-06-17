@@ -4893,6 +4893,7 @@ jgs \_   _/ |Oo\
         public static bool checkMode;
         public static bool lastChecker;
         public static bool highQualityText;
+        public static bool stumpTextToggle;
 
         public static bool SmoothGunPointer;
         public static bool smallGunPointer;
